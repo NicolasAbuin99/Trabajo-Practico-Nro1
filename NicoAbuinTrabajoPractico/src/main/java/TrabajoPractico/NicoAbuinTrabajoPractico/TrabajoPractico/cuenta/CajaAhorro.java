@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 @Data
 
-public class CajaAhorro extends Cuentas {
+public class CajaAhorro extends Cuenta {
 
     private double tasaInteres;
 
@@ -16,8 +16,11 @@ public class CajaAhorro extends Cuentas {
 
     public void cobraInteres(){
         double interesGanado = this.getSaldo() * this.getTasaInteres();
+        // Calcula el interés ganado multiplicando el saldo actual por la tasa de interés. 
+        //Usa los métodos `get` de Lombok para acceder a los atributos.
         this.setSaldo(this.getSaldo()+interesGanado);
-        System.out.println("Se cobro "+interesGanado+ " de intereses");
-        System.out.println("El nuevo saldo es "+this.getSaldo());
+        // Suma el interés ganado al saldo actual, usando el método `setSaldo` de Lombok.
+        System.out.println("Se cobro "+interesGanado+ " de intereses");//imprime interes
+        System.out.println("El nuevo saldo es "+this.getSaldo());//imprimis el saldo
     }
 }

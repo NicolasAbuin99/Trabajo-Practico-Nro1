@@ -14,8 +14,8 @@ public class Test {
 
         // 1. CREAR CLIENTES
         System.out.println("--- CREACIÓN DE CLIENTES ---");
-        ClienteIndividual clientei1 = new ClienteIndividual(1, "Nicolas", "Abuin", 40863806);
-        ClienteEmpresa clientee1 = new ClienteEmpresa(1, "Pepito Mongolo", 50128766);
+        ClienteIndividual clientei1 = new ClienteIndividual(1, "Nicolas", "Abuin", "40863806");
+        ClienteEmpresa clientee1 = new ClienteEmpresa(1, "Pepito rober", "50128766");
         System.out.println("Cliente individual creado: " + clientei1.getNombre() + " " + clientei1.getApellido());
         System.out.println("Cliente empresa creado: " + clientee1.getNombreFantasia());
         System.out.println("----------------------------\n");

@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 
-public class CuentaCorriente extends Cuentas{
+public class CuentaCorriente extends Cuenta{
 
     private double montoAutorizado;
 
